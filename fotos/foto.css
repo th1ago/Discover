@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto auto;
+    gap: .8rem;
+    padding: 10px;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+.container > img{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    padding: 10px;
+}
