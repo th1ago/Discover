@@ -1,17 +1,19 @@
 .grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    display: flex;
+    grid-template-columns: 1rem auto;
+    gap: 1rem;
 }
 
 #coluna1{
-    height: 100px;
+    height: 500px;
     width: 100px;
     background-color: grey;
+    flex-basis: 25%;
 }
 
 #coluna2{
-    height: 100px;
+    height: 500px;
     width: 100px;
     background-color: bisque;
+    flex: 1rem;
 }
