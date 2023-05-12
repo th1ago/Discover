@@ -10,3 +10,5 @@
 - `childNodes` consegue rodar um forEach | `children` HTMLCollection
 - `firstChild` considera espaço vazio | `firstElementChild` nao considera espaço
 - `latsChild` considera espaço vazio | `lastElementChild` nao considera espaço
+- `nextSibing` considera espaço vazio | `nextElementSibling` nao considera espaço
+- `previousSibing` considera espaço vazio | `previousElementSibling` nao considera espaço
