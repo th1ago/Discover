@@ -12,7 +12,7 @@ const ask = (index = 0) => {
 ask()
 
 const answers = []
-// ouvindo o processo
+// ouvindo eventos de dados
 process.stdin.on("data", data => { // guarda a funcao como callback
     answers.push(data.toString().trim())
     if(answers.length < question.length){
