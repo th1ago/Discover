@@ -13,7 +13,7 @@ ask()
 
 const answers = []
 // ouvindo o processo
-process.stdin.on("data", data => {
+process.stdin.on("data", data => { // guarda a funcao como callback
     answers.push(data.toString().trim())
     if(answers.length < question.length){
         ask(answers.length)
@@ -21,4 +21,21 @@ process.stdin.on("data", data => {
         console.log(answers)
         process.exit()
     }
+})
+
+process.on('exit', () => {
+    console.log(`
+    Legal Thiago
+
+    O que voce aprendeu hoje foi:
+    ${answers[0]}
+    O que te deixou triste hoje foi:
+    ${answers[1]}
+    O que voce faria para melhorar hoje foi:
+    ${answers[2]}
+    O que te deixou feliz hoje:
+    ${answers[3]}
+
+    Volte amanha para novas reflexoes!!
+    `)
 })
