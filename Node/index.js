@@ -11,7 +11,14 @@ const ask = (index = 0) => {
 
 ask()
 
+const answers = []
 // ouvindo o processo
 process.stdin.on("data", data => {
-    process.stdout.write(data.toString().trim() + '\n')
+    answers.push(data.toString().trim())
+    if(answers.length < question.length){
+        ask(answers.length)
+    } else {
+        console.log(answers)
+        process.exit()
+    }
 })
