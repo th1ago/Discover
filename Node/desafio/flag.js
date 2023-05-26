@@ -1,5 +1,5 @@
 /*
-crie 2 arquivos ja
+crie 2 arquivos js
 o primeiro ira exportar uma funcao getFlag() que recebera uma striung
 essa funcao devera buscar dentro do array process.argv a flag desejada
 
