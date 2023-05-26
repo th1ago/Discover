@@ -3,8 +3,9 @@ const { EventEmitter } = require('events')
 const ev = new EventEmitter()
 
 // ouvindo o evento - executar a action
+// on, para ouvir sempre
 // once, executa uma unica vez
-ev.once('Alguma coisa', (message) => {
+ev.on('Alguma coisa', (message) => {
     console.log('Eu ouvi voce', message)
 })
 
