@@ -7,8 +7,20 @@ app.set("view engine", "ejs");
 
 // criando uma rota
 app.get("/", function(req, res) {
-    res.render("pages/index");
-})
+    const items = [
+        {
+            title: "A",
+            message: "teste A"
+        },
+        {
+            title: "B",
+            message: "teste B"
+        },
+    ];
+    res.render("pages/index", {
+        quality: items,
+    });
+});
 
 app.get("/sobre", function(req, res) {
     res.render("pages/about");

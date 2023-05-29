@@ -9,6 +9,14 @@
             <h1>Node com EJS</h1>
             <p>Lets gooo</p>
         </div>
+        <ul>
+            <% quality.forEach(function(quality){ %>
+                <li> 
+                    <strong><%= quality.title %></strong><%= quality.message %>
+                </li>
+            <% }) %>
+            
+        </ul>
     </main>
     <%- include('../partials/footer'); %>
 </body>
