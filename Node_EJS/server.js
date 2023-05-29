@@ -7,7 +7,11 @@ app.set("view engine", "ejs");
 
 // criando uma rota
 app.get("/", function(req, res) {
-    res.render("index");
+    res.render("pages/index");
+})
+
+app.get("/sobre", function(req, res) {
+    res.render("pages/about");
 })
 
 // app carrega tudo do express
